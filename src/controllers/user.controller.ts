@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
-import { PrismaClient } from "../generated/prisma/client";
-import { sendError, sendSuccess } from "../utils/response";
-import { hashPassword, verifyPassword } from "../utils/password";
+import { PrismaClient } from "../generated/prisma/client.js";
+import { sendError, sendSuccess } from "../utils/response.js";
+import { hashPassword, verifyPassword } from "../utils/password.js";
 // utils
 
 const prisma = new PrismaClient();
