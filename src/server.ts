@@ -14,6 +14,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/api/v1', routes)
 
+app.get('/', (req, res) => {
+    res.send({ success: true, message :'working'})
+})
+
 app.listen(port, async () => {
     console.log(`Server is running on port ${port}`);
 })
